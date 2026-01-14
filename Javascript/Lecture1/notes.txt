@@ -1,0 +1,30 @@
+Web Technology road-map ->
+
+Frontend ->
+  HTML + CSS (basic)
+   |
+   JAVASCRIPT
+   |
+   DOM
+   |
+   REACT/ANGULAR
+
+Backend ->
+   1> .net
+   2> Express
+   3> MongoDB
+
+⦁	What is nodejs -> It is an runtime environment which is used to run js code outside the browser
+
+⦁	JS ->
+	Datatypes ->
+     1>Premitive - num , Boolean ,string, begin, null, undefined, symbol
+     2>Non-premitive - Object
+
+let,const,var -> 
+
+const - const cannot be changed,its value is fixed
+diff between let and var - var is used by old developers and let is used in modern formate.The bug in var is that if in scope we changed the value of any variable and if we print both the numbers ,the number outside the scope and the updated number inside the scope for the value of number outside scope as well var considers the upated value but that updation is only restricted to that scope only.
+
+ 
+ 
