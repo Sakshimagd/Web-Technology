@@ -1,0 +1,24 @@
+Event theory
+
+    -event is an action that happen in browser e.g clicking a button,moving mouse,pressing key,submitting form,loading page
+    -js can detect these events and respond to them
+    -types of event ->1> mouse event - click, dbl click, mouse over, mouse out-(types).
+                2> keyboard event - key down, key up 
+                3> browser event - load, scroll, resize
+
+    # onclick="alert('photoshop')" -> Html should contain structure js should contain logic ,so mixing both is bad practice hard to maintain in big project
+
+    # document.getElementById('japan').onclick = function(){alert('japan')} -> select element assign function to click event when click function run
+
+    # problem -> only one event can be assighned cannot handle multiple listeners properly
+
+    # adv way -> document.getElementById('Nature').addEventListener('click',function(e){console.log(e);},false)
+
+    (imp)addEventListener - addEventListener is a js method used to attach an event handller to an html element so that specific function run when a perticular event occures
+
+    eventPropagation -  true(event capturing) - parent to child
+                        false(event  propagation) - child to parent 
+    
+
+     activity - je query, tipe timespane default prevented,target sourse element current target ,client X clientY screen X screen Y alt key control key shift key 
+     activity - on clicking th image that image should vanish and after refreshing the image should come back 

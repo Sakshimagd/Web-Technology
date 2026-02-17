@@ -9,10 +9,17 @@ Frontend ->
    |
    REACT/ANGULAR
 
+Examples of web tech ->
+   - various websites like zomato, myntra, amazon, flipcart, redbus, etc.
+
+What is js -> 
+    a programming language used to create dynamic, interactive behavior on websites and web applications.
+
 Backend ->
    1> .net
    2> Express
    3> MongoDB
+
 
 ⦁	What is nodejs -> It is an runtime environment which is used to run js code outside the browser
 

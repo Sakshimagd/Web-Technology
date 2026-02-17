@@ -1,0 +1,5 @@
+dom manipulation -  
+    dom manipulation means changing html by using js
+    e.g - show success message, show error message, clear input field, change text, change color
+
+
