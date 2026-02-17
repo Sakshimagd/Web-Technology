@@ -18,19 +18,21 @@ let PRN = "23UAM071";
 let Address = "Girmal mala,a.lat"
 let Marks = 90
 console.log(name,PRN,Address,Marks) 
-document.writeln(name,PRN,Address,Marks )
+document.writeln(name + " " + PRN + " " + Address + " " + Marks + "<br>");
 
-//Activity2 : check is number is even or odd
+
+// Activity2 : check if number is even or odd
 console.log("--------------------")
 let num = 20;
-if(num % 2 == 0){
-    console.log("The number is even")
-    document.writeln("The number is even <br>")
+
+if (num % 2 === 0) {
+    console.log("The number is even");
+    document.writeln("The number is even <br>");
+} else {
+    console.log("The number is odd");
+    document.writeln("The number is odd <br>");
 }
-else{
-    console.log("The number is odd")
-    document.writeln("The number is odd <br>")
-}
+
 
 // Activity3 : check student pass or fail
 console.log("--------------------")
@@ -50,7 +52,7 @@ console.log("--------------------")
 let array = [10,11,12,13,14,15]
 for (let arr of array){
     console.log(arr);
-    document.writeln(arr);
+     document.writeln(arr + "<br>");
 }
 
 // Activity5
@@ -59,6 +61,6 @@ let x = 10;
 let y = x;
 x = 100;
 console.log(x,y);
-document.writeln(x,y );
+document.writeln(x + " " + y + "<br>");
 
 // Activity6 : connect js file with html file 
