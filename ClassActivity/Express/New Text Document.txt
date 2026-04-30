@@ -1,0 +1,39 @@
+Express is a minimal and flexible web application framework for nodejs that simplifies the development of web server and apis.
+It provides features such as roughting, middleware support, request and responce handling, template rendering, rest api creation.
+
+oops is very important for the interview hhhh 
+what need of express rather than nodejs ->
+  nodejs code is getting complicated for large company work and complex code , it works well for small task efficiently.
+what is error handling , types of error handling.
+what is runtime polimorphism
+
+how to create project->
+  open cmd from file and type code. to open vs code -> install nodejs -> node --version -> npm init(initialice node packagemanager,create packages) -> npm install express (creates node_modules,packages) -> create index.js
+
+Activity1 ->
+diff between package.json and package log.json
+diff between dev dependencies and dependencies
+for the created roughts do some work in it using js
+study about http methods
+
+
+.env contains all port no for express
+diff in http request(put,get post ,delete,patch)
+
+Roughting in express js - 
+   -roughting referse to determining how application responds to a client request for a specific url and http methods.
+   -componts of roughting - url path, http methods, handler function
+
+Middleware in expressjs -> 
+   -middleware is afunction that execute query request before sending the final responce.
+   -they have access through request ,responce and next.  
+   -syntax :
+
+Activity2 ->
+why we use middlewares
+what are types of middleware
+what are benefites of middleware
+where we use middleware function in company levels
+
+
+

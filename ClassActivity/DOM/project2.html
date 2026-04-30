@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DKTE Result Calculator</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: 0.3s;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #2a5298;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .calculate {
+            background: #2a5298;
+            color: white;
+        }
+
+        .calculate:hover {
+            background: #1e3c72;
+        }
+
+        .reset {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .reset:hover {
+            background: #c0392b;
+        }
+
+        .dark-btn {
+            background: black;
+            color: white;
+            margin-top: 15px;
+        }
+
+        #result {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background: #121212;
+        }
+
+        .dark-mode .container {
+            background: #1e1e1e;
+            color: white;
+        }
+
+        .dark-mode input {
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>DKTE Student Result</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="number" id="m1" placeholder="Enter Subject 1 Marks">
+    <input type="number" id="m2" placeholder="Enter Subject 2 Marks">
+    <input type="number" id="m3" placeholder="Enter Subject 3 Marks">
+
+    <br>
+
+    <button class="calculate" onclick="calculate()">Calculate</button>
+    <button class="reset" onclick="resetForm()">Reset</button>
+
+    <div id="result"></div>
+
+    <button class="dark-btn" onclick="toggleDark()">Toggle Dark Mode</button>
+</div>
+
+<script>
+
+function calculate() {
+
+    let name = document.getElementById("name").value;
+    let m1 = Number(document.getElementById("m1").value);
+    let m2 = Number(document.getElementById("m2").value);
+    let m3 = Number(document.getElementById("m3").value);
+
+    let total = m1 + m2 + m3;
+    let percentage = total / 3;
+
+    let grade;
+
+    if (percentage >= 75) {
+        grade = "Distinction";
+    } else if (percentage >= 60) {
+        grade = "First Class";
+    } else if (percentage >= 50) {
+        grade = "Second Class";
+    } else {
+        grade = "Fail";
+    }
+
+    let resultDiv = document.getElementById("result");
+
+    resultDiv.innerHTML =
+        "Name: " + name +
+        "<br>Total: " + total +
+        "<br>Percentage: " + percentage.toFixed(2) +
+        "<br>Grade: " + grade;
+
+    resultDiv.style.background = "#d4edda";
+    resultDiv.style.color = "green";
+}
+
+function resetForm() {
+    document.getElementById("name").value = "";
+    document.getElementById("m1").value = "";
+    document.getElementById("m2").value = "";
+    document.getElementById("m3").value = "";
+    document.getElementById("result").innerHTML = "";
+}
+
+function toggleDark() {
+    document.body.classList.toggle("dark-mode");
+}
+
+</script>
+
+</body>
+</html>

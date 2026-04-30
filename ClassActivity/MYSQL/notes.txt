@@ -1,0 +1,26 @@
+sql - Structured Query Lang is used to communicate between realtime database.
+    
+   -popular database - MySQL, postgre sql ,MySQL server
+
+ - banking , hospital management, ecommerce
+
+store procedure, view, find 2nd last highest salary , joins query, 
+
+Actiivty -> 
+   create table -> create table student;
+
+   insert data -> 
+
+   select table -> 
+
+   update ->
+
+   delete ->
+
+connection of node js with sql:
+     check node version
+     ckeck npm version
+     npm install mysql2
+
+web socket ->
+    

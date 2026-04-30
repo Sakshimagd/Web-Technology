@@ -1,0 +1,62 @@
+react is a js library developed by meta to build a fast and interactive user interfaces.
+By using javascript: It is a single page application(spa - page does not reload only contain change . ex - Instagram, facebook) 
+
+why do we use react:
+    problem with traditional js:
+          fully page reload
+          complex dom manipulation
+          hard to manage large applications
+    with react :
+          updates only required part
+          use only reusable components
+
+Virtual DOM : react cretes a copy of real DOM means virtual DOM. when data changes react updates virtual DOM. Updates only change the part in real dom
+    use : high performance
+
+How we can create project in react: check node version  -> check npm version -> npm create vite@latest studentApp -> y -> enter ->  Select a framework: React ->  Select a variant:JavaScript ->  Install with npm and start now?: y
+
+Activity:
+what is difference between angular and react 
+market hipe?
+why react created?
+
+vite - fast build tool 
+       npm(node pachage manager) install means install dependencies 
+       npm run dev - start server
+       jsx : jsx means js + xml. it allows to us write html code inside js
+          const element = <h1> hello react</h1>
+       rules in jsx:
+          must return single parent
+          use scope brakets(curly brakets) for js
+       
+       main.jsx: it is the entry point of react application
+
+       componets is a heart of react:
+           1> functional component:ex - 
+                       function student(){
+                             return <h1> This is fc </h1>;
+                        }
+                  use component:
+                       function app(){
+                           return <>
+                                  <student/>
+                                  //<student/> to print again
+                                  </>
+                        }
+
+properties(props): means data passed from parent to child
+           function app(){
+                  return <studentFname = 'sam'/>
+            }
+            
+           function Student(props){
+                 return <h2>Name:{props.Fname}</h2>
+           }
+
+Activities->
+
+ what is components
+ types of components 
+ where we components in react with 2 ex 
+ what is props , why we use props, types of props with two examples
+                 

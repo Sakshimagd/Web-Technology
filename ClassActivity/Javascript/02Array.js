@@ -48,3 +48,4 @@ console.log(Array.of(score1,score2,score3))//create new array from given value n
 //Array.from - converts Ietator
 
 ////Assignment array, string, object, function...
+//map filter reduce

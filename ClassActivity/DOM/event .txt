@@ -22,3 +22,12 @@ Event theory
 
      activity - je query, tipe timespane default prevented,target sourse element current target ,client X clientY screen X screen Y alt key control key shift key 
      activity - on clicking th image that image should vanish and after refreshing the image should come back 
+
+
+
+    dot net-
+     multicaste deligate example
+     replace methos with lambda expressions
+     sort list using lamda
+     where we use deligates and lambda expressions in company and industries
+     what is LINQ queries

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DKTE Admission Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>DKTE Admission Form</h1>
+
+    <form id="admissionForm">
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email">
+
+        <select id="branch">
+            <option value="">Select Branch</option>
+            <option>CSE</option>
+            <option>Mechanical</option>
+            <option>Electrical</option>
+            <option>Civil</option>
+        </select>
+
+        <input type="date" id="dob">
+
+        <button type="submit">Apply Now</button>
+    </form>
+
+    <p id="message"></p>
+
+    <h2>Available Courses</h2>
+    <button onclick="loadCourses()">Load Courses</button>
+    <ul id="courseList"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

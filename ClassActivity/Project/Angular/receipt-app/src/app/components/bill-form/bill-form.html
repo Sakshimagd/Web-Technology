@@ -1,0 +1,15 @@
+<h2>Bill Form</h2>
+
+<label>Name:</label>
+<input [(ngModel)]="item.name"><br><br>
+
+<label>Price:</label>
+<input type="number" [(ngModel)]="item.price"><br><br>
+
+<label>Qty:</label>
+<input type="number" [(ngModel)]="item.qty"><br><br>
+
+<button (click)="addItem()">Add Item</button>
+
+<br><br>
+<a routerLink="/receipt">Go to Receipt</a>
